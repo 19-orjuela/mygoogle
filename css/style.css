@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: khaki;
+    width: 100%;
+    z-index: 2;
+}
+header>p{
+    text-align: end;
+    padding: 15px;
+}
+#logo{
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+}
+#input{
+    grid-area: input;
+    justify-self: center;
+    align-self: end;
+}
+#flotar{
+    grid-area: flotar;
+    justify-self: end;
+}
+#flotar img{
+    width: 80px;
+}
+main{ 
+    position: relative;
+    top: 80px;
+    left: 0;
+    z-index: 1;
+    height: 500px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+        ".  .  ."
+        ". logo ."
+        ". logo ."
+        ". input ."
+        ". . flotar"
+        ".  .  .";
+}
+#logo img{
+    width: 300px;
+}
+footer{
+    position: absolute;
+    top: 580px;
+    width: 100%;
+    background-image: linear-gradient(45deg, #FAA, #FFA);
+}
+.separar{
+    word-spacing: 25px;
+}
