@@ -29,8 +29,16 @@ header>p{
     grid-area: flotar;
     justify-self: end;
 }
+#botones{
+    justify-self: center;
+    align-self: end;
+    margin: 30px;
+    grid-area: boton;
+}
+
 #flotar img{
     width: 80px;
+    position: absolute;
 }
 main{ 
     position: relative;
@@ -41,12 +49,13 @@ main{
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     grid-template-areas: 
         ".  .  ."
         ". logo ."
         ". logo ."
         ". input ."
+        ". boton ."
         ". . flotar"
         ".  .  .";
 }
@@ -61,4 +70,13 @@ footer{
 }
 .separar{
     word-spacing: 25px;
+}
+.botom{
+    padding: 8px;
+    border-radius: 5px;
+    background-color: lightgrey;
+}
+#gmail{
+    border-radius: 2px;
+    background-color: royalblue;
 }
